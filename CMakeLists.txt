@@ -23,6 +23,18 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Arma-Reforger-Log-Viewer
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+
+        scan.hpp
+        parseSort.hpp
+
+
+
+
+
+
+
+        parseSort.cpp
+        scan.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Arma-Reforger-Log-Viewer APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
