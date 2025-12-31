@@ -5,7 +5,9 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+   ui->setupUi(this);
+    connect(ui->actionOpen,SIGNAL(triggered()),SLOT(fileOpen));
+
 }
 
 MainWindow::~MainWindow()
@@ -13,3 +15,4 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void fileOpen(){}
