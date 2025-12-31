@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtWidgets/QFileDialog>
+#include <iostream>
+#include <string>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -14,10 +17,13 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    std::string fileOpen();
 
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H
