@@ -1,8 +1,11 @@
 #include "scan.hpp"
-void scan::readFile(std::string file) {
+scan::scan(std::string PATH){
+    setPath(PATH);
+}
+void scan::readFile() {
     try {
-        read.open(file);
-        write.open(file);
+        read.open(filePath);
+        write.open(filePath);
 
         if (read.fail() || write.fail())
             throw(1);
@@ -26,5 +29,8 @@ void scan::readFile(std::string file) {
         }
     }
     read.close();
+}
+void scan::setPath(std::string PATH){
+    this->filePath = PATH;
 }
 std::vector<std::string> scan::getLog() { return logLines; }

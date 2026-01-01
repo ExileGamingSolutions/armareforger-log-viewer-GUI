@@ -23,7 +23,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     std::string fileOpen();
-    scan _Scan;
+    //null init
+    scan _Scan = scan("");
     parseSort _parseSort;
 
 private:

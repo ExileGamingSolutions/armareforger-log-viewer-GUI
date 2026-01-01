@@ -5,11 +5,13 @@
 #include <sstream>
 #include <string>
 #include <vector>
-class scan {
+struct scan {
 public:
-  void readFile(std::string file);
+  scan(std::string PATH);
+  void readFile();
+  void setPath(std::string PATH);
   std::vector<std::string> getLog();
-  std::string filePath = "test.txt";
+  std::string filePath = "";
   std::ifstream read;
   std::fstream write;
   std::string x;
