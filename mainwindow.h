@@ -3,8 +3,10 @@
 
 #include <QMainWindow>
 #include <QtWidgets/QFileDialog>
-#include <iostream>
 #include <string>
+
+#include "scan.hpp"
+#include "parseSort.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,6 +23,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     std::string fileOpen();
+    scan _Scan;
+    parseSort _parseSort;
 
 private:
     Ui::MainWindow *ui;

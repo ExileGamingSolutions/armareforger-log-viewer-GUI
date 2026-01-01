@@ -14,12 +14,12 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QListView" name="listView">
     <property name="geometry">
      <rect>
-      <x>-5</x>
-      <y>1</y>
-      <width>811</width>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
       <height>581</height>
      </rect>
     </property>
@@ -40,7 +40,6 @@
     </property>
     <addaction name="separator"/>
     <addaction name="actionOpen"/>
-    <addaction name="actionSave"/>
    </widget>
    <widget class="QMenu" name="menuFilter">
     <property name="title">
